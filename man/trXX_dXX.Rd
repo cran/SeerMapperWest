@@ -4,7 +4,6 @@
 \alias{trXX_d00}
 \alias{tr05_d00}
 \alias{tr08_d00}
-\alias{tr16_d00}
 \alias{tr20_d00}
 \alias{tr27_d00}
 \alias{tr29_d00}
@@ -19,7 +18,7 @@
 
 \docType{data}
 \title{
-   U.S. 2000 Census Tract Boundary data datasets for 14 States 
+   U.S. 2000 Census Tract Boundary data datasets for 13 States 
    without Seer Registries west of the Mississippi river 
    for use with \var{SeerMapper} Package
 }
@@ -31,21 +30,21 @@
  The combination of the either three provide a 
  set of census tract boundaries for one U. S. census year (either 2000 or 2010).
  The \var{SeerMapperRegs} and \var{Seer2010MapperRegs} packages contain 
- the census tract boundaries for the 15 states the have U. S. Seer Registries.
+ the census tract boundaries for the 19 states the have U. S. Seer Registries.
  The remaining census tract boundaries are split into two packages 
  for each census year based on whether the state is east or west of the 
- Mississippi river.  The census tracts for 23 states without registries east 
+ Mississippi river.  The census tracts for 20 states, district and territory without registries east 
  of the Mississippi river at contained in the \var{SeerMapperEast} 
  and \var{Seer2010MapperEast} packages.  
- The tract boundaries for the 14 states west of the Mississippi river are 
+ The tract boundaries for the 13 states west of the Mississippi river are 
  in the \var{SeerMapperWest} and \var{Seer2010MapperWest} packages.  
  The states include the District of Columbia and Puerto Rico.
- This package provides the 2000 census tract boundaries for the 14 
+ This package provides the 2000 census tract boundaries for the 13 
  states without registries west of the Mississippi river.
  }
 \usage{data(tr05_d00)}
 \format{
- Each file contains a set of SpatialPolygons structures for the 14 states
+ Each file contains a set of SpatialPolygons structures for the 13 states
  west of the Mississippi that do not have Seer Registries.
  Each state structure is a list of the census tracts boundaries that 
  the state. Refer to the documentation on the \var{sp} package for 
@@ -56,12 +55,11 @@
  }
 \details{
 The \var{SeerMapperWest} and \var{SeerMapper2010West} packages contains 
-14 western states including:
+13 western states including:
 \preformatted{
     FIPS   Name
      05     Arkansas
      08     Colorado
-     16     Idaho
      20     Kansas
      27     Minnesota
      29     Missouri
@@ -124,12 +122,12 @@ The \var{SeerMapperWest} and \var{SeerMapper2010West} packages contains
   outDir     <- tempdir()
   cat("Output Directory:",outDir,"\n")
   
-  stList     <- c("05","08","16","20","27",
-                  "29","30","31","32","38",
-                  "41","46","48","56")
-  stName     <- c("Arkansas","Colorado","Idaho","Kansas","Minnesota",
-                  "Missouri","Montana","Nebraska","Neveda","North Dakota",
-                  "Oregon","South Dakota","Texas","Wyoming") 
+  stList     <- c("05","08","20","27","29",
+                  "30","31","32","38","41",
+                  "46","48","56")
+  stName     <- c("Arkansas","Colorado","Kansas","Minnesota","Missouri",
+                  "Montana","Nebraska","Neveda","North Dakota","Oregon",
+                  "South Dakota","Texas","Wyoming") 
   cY         <- "00"
 
   outFile    <- paste0("SeerMapperWest",cY,"-CT.pdf")
@@ -138,7 +136,7 @@ The \var{SeerMapperWest} and \var{SeerMapper2010West} packages contains
   
   pdf(outFN,width=7,height=10)
 
-  for (stN in seq(from=1, to=length(stList), by=7)) {  # Test draw 2 of 14 states  (1 and 8)
+  for (stN in seq(from=1, to=length(stList), by=7)) {  # Test draw 2 of 13 states  (1 and 8)
 
      stID    <- stList[stN]
      stNa    <- stName[stN]

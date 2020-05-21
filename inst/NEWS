@@ -5,3 +5,11 @@ for use with the SeerTractMapper package.  This package contains
 the U. S. census tract boundaries for any state east of the Mississippi
 River that does not contain a U. S. Seer Registries.
 
+Release 1.2.2 - April 12, 2019
+
+Moved the census tract data for NY, MA, ID, and WI from the East and West boundary packages to the Regs package.
+
+
+
+
+

@@ -4,13 +4,13 @@
 \title{\var{SeerMapper}-Supplemental 2000 Census Tract Western States Boundary Datasets }
 \description{
  The \var{SeerMapperWest} package provides supplemental 2000 Census Tract boundary datasets
- for 14 states without Seer Registries that are west of of the Mississippi river 
+ for 13 states without Seer Registries that are west of of the Mississippi river 
  for use with \var{SeerMapper} package.  
  
  The \var{SeerMapperRegs} supplemental data package contains the 2000 census tract
- boundary datasets for 15 states with NCI Seer Registries.  
+ boundary datasets for 19 states with NCI Seer Registries.  
  The \var{SeerMapperEast} supplemental data package contains the 2000 census trace
- boundary datasets for 23 states, DC and PR that do not have NCI Seer Registries and are 
+ boundary datasets for 20 states (including DC and PR) that do not have NCI Seer Registries and are 
  east of the Mississippi river.
  
  By loading these packages (via the library function) expands the \var{SeerMapper}
@@ -21,8 +21,8 @@
     \tabular{ll}{
       Package:  \tab SeerMapperWest\cr
       Type:     \tab Package\cr
-      Version:  \tab 1.2.0\cr
-      Date:     \tab 2017-04-12\cr
+      Version:  \tab 1.2.2\cr
+      Date:     \tab 2019-4-12\cr
       License:  \tab GPL-2\cr
       LazyLoad: \tab no\cr
     } 
@@ -31,7 +31,7 @@ No special action is required by the user to install this package or
 load it when running \var{SeerMapper}.  The defined interdependencies 
 of the packages automatically install the supplemental census tract 
 boundary packages when \var{SeerMapper} is install.
-When \var{SeerMapper} is called, if it determines that one or more
+When \var{SeerMapper} is called, if it determines which, if any, 
 supplemental packages need to be loaded, it initiates the loading for
 the caller.
 \preformatted{  
@@ -53,7 +53,6 @@ boundary datasets for:
     FIPS   Name
      05     Arkansas
      08     Colorado
-     16     Idaho
      20     Kansas
      27     Minnesota
      29     Missouri
@@ -66,11 +65,12 @@ boundary datasets for:
      48     Texas
      56     Wyoming
   }
+using the Alber Equal Area projection for the U. S.
 }  
 \author{
-Jim Pearson \email{jpearson@statnetconsulting.com}\cr 
-Maintainer: "Jim Pearson" \email{jpearson@statnetconsulting.com}\cr 
-Package compiled by "Jim Pearson" \email{jpearson@statnetconsulting.com}
+Jim Pearson \email{jpearson0525@gmail.com}\cr 
+Maintainer: "Jim Pearson" \email{jpearson0525@gmail.com}\cr 
+Package compiled by "Jim Pearson" \email{jpearson0525@gmail.com}
 }
 
 
