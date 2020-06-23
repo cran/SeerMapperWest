@@ -1,11 +1,11 @@
 Package: SeerMapperWest
 Type: Package
-Version: 1.2.3
-Date: 2020-06-17
+Version: 1.2.4
+Date: 2020-06-22
 Title: Supplemental U.S. 2000 Census Tract Boundaries for 13 Western
         States without Seer Registries for 'SeerMapper'
 Author: Jim Pearson <jbpearson353@gmail.com> with data provided by U.S. Census Bureau
-Maintainer: Fanni Zhang <zhangf@imsweb.com>
+Maintainer: Joe Zou <zouj@imsweb.com>
 Depends: R (>= 3.6.0)
 Imports: sp
 Suggests:
@@ -21,6 +21,6 @@ LazyLoad: no
 BuildResaveData: yes
 ByteCompile: yes
 NeedsCompilation: no
-Packaged: 2020-06-17 14:44:55 UTC; zhangf10
+Packaged: 2020-06-22 13:32:16 UTC; zhangf
 Repository: CRAN
-Date/Publication: 2020-06-18 11:00:11 UTC
+Date/Publication: 2020-06-23 05:30:38 UTC
