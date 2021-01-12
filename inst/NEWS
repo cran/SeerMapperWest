@@ -1,4 +1,4 @@
-SeerMapperWest - Release 1.2.0 - April 11, 2017
+SeerMapperWest - Release 1.2.5 - January 8, 2021
 
 Initial release of SeerMapperWest supplemental U. S. census tract boundary data
 for use with the SeerMapper package.  This package contains
@@ -17,6 +17,9 @@ Release 1.2.4 - June 22, 2020
 
 Change the maintainer.
 
+Release 1.2.5 - January 8, 2021
+
+Rebuilt the CRS objects to meet the requirements of the rgdal and sp.
 
 
 
